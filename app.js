@@ -83,3 +83,12 @@ function createRandomCircle(){
 function getRandomNum(min, max){
   return Math.round(Math.random()*(max - min) + min)
 }
+
+function win(){
+  setInterval(() => {
+    c = document.querySelector('.circle')
+    if(c){
+      c.click()
+    }
+  }, 25);
+}
